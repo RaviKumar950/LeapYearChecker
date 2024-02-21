@@ -1,6 +1,7 @@
-years = int(input("Enter your year:>>>\t"))
+import calendar
+year = int(input("Enter your year:>>>\t"))
 
-if (years % 400 ==0)or(years % 4==0 and years % 100 != 0):
-    print(years,"Is the leap year")
+if calendar.isleap(year):
+    print("leap year")
 else:
-    print(years,"This year is not leap year")
+    print("not a leap year")
